@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "imdev-en";
+    src: url('./Montserrat.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+  
+
+@font-face {
+    font-family: "imdev-en-bold";
+    src: url('./Montserrat-Bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}

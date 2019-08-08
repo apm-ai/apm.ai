@@ -1,0 +1,19 @@
+<svg width="1187px" height="700px" viewBox="0 0 1187 700" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="53.8936238%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#ccc" offset="0%"></stop>
+            <stop stop-color="#3E6686" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Roman" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.2" stroke-dasharray="10,8" stroke-linecap="round">
+        <g id="Concept-F" transform="translate(-103.000000, -3893.000000)" stroke="url(#linearGradient-1)" stroke-width="3">
+            <g id="5" transform="translate(100.000000, 3542.000000)">
+                <g id="Phase-One" transform="translate(0.000000, 292.000000)">
+                    <path d="M19,138 C-9.66666667,220 10.3333333,264 79,270 C182,279 248,170 330,197 C412,224 537.135482,179.177473 640,121 C884,-17 1244,110 1180,282 C1116,454 -141,150 62,501 C265,852 973,277 1056,501 C1105.49115,634.566468 960,609 897.613176,663.090261 " id="Path-2"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
