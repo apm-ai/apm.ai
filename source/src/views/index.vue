@@ -202,7 +202,7 @@
                      </div>
                 </div>
                 <div class="timeline__majorversion d-none d-sm-block" style="z-index:100">
-                    <a class="color-text" style="position:absolute;margin-left:-30px;margin-top:38px;text-decoration:none;" href="https://github.com/tracedt/koala/milestone/8">
+                    <a style="position:absolute;margin-left:-30px;margin-top:38px;text-decoration:none;color:white" href="https://github.com/tracedt/koala/milestone/8">
                     V1.0
                     </a>
                 </div>
