@@ -597,9 +597,6 @@ export default {
         margin-top: 30px !important
     }
 
-    #boat {
-        display: none;
-    }
     .correlation {
         display:noe !important;
     }
