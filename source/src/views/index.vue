@@ -294,8 +294,8 @@ export default {
         justify-content:space-between;
         display: flex;
         width: 100%;
-        padding-right: 15px;
-        padding-left: 15px;
+        // padding-right: 15px;
+        // padding-left: 15px;
         nav {
             .list-inline {
                 padding-left: 0;
@@ -561,14 +561,18 @@ export default {
         height: 250px !important;
     }
     .foot-tooltip {
-        width: 90% !important;
-        margin-left:0% !important
+        width: 100% !important;
+        margin-left:0% !important;
+        padding:30px 0px !important;
     }
 }
 
 @media only screen and (max-width: 576px) {
      .timeline__bar {
         height: 1116px !important;
+    }
+    .features {
+        margin-top: 30px !important
     }
 }
 </style>
