@@ -2,7 +2,7 @@
   <div class="index">
         <div class="header">
             <div class="header-container container"> 
-                <a href="/" class="header-logo" style=" color: #fff;text-decoration: none;font-size: 26px;">
+                <a href="/" class="header-logo title-large" style=" color: #fff;text-decoration: none;font-size: 26px;">
                     APM.AI
                 </a>
                 <nav class="header-nav list-inline">
@@ -15,7 +15,7 @@
                 </nav>
             </div> 
             <div style="text-align:center;padding-top:20px;padding-bottom:10px">
-                <p style="color:#fff;font-size:26px;font-weight:bold;line-height:20px">Next-generation APM</p>
+                <p class="title-large" style="color:#fff;font-size:26px;font-weight:bold;line-height:20px">Next-generation APM</p>
                 <p class="sub-title" style="font-size:18px">Blends APM with AI to bring you modern monitoring & analytics</p>
             </div> 
             
@@ -75,7 +75,7 @@
                     </div>
                     <div class="different__trace col-12 col-md-7 text-center" style="padding-bottom:30px;margin-top:11px;">
                         <div class="different__trace--small">
-                            <span style="font-size:30px;color:white">APM.AI (<a href="http://koa.la" style="color:white">Koala</a>)</span>
+                            <span style="font-size:30px;color:white" class="title-large">APM.AI (<a href="http://koa.la" style="color:white">Koala</a>)</span>
                             <p class="different__text different__text--trace different__highlight--trace" style="margin-top:41px;">
                                 Distributed tracing, metrics, logs
                             </p>
@@ -171,7 +171,7 @@
                          </div>
                         <div class="timeline-item" style="margin-top:135px;">
                              <a class="title" href="https://github.com/tracedt/koala/milestone/4">v0.3 - Tracing Metrics Support</a>
-                             <p class="desc">Extract general metrics from tracing data, such as url,sql,exception,method etc, visualize them in dashboard.</p>
+                             <p class="desc">Extract general metrics from tracing data, such as url, sql, exception, method etc, visualize them in dashboard.</p>
                          </div>
                          <div class="timeline-item" style="margin-top:115px;">
                              <a class="title" href="https://github.com/tracedt/koala/milestone/5">v0.5 - Dependency Analyzing</a>
@@ -182,7 +182,7 @@
                              <p class="desc">Make pinpoint compatible with OpenTelemetry</p>
                          </div>
                      </div>
-                     <div class="col-12 col-md-6 mb-3 mb-md-0" style="padding-left:8px">
+                     <div class="col-12 col-md-6 mb-3 mb-md-0 roadmap-right" style="padding-left:8px">
                         <div class="timeline-item" style="margin-top:110px;">
                              <a class="title" href="https://github.com/tracedt/koala/milestone/3">v0.2 - Tracing Support</a> <span class="tag blue">IN DEV</span>
                              <p class="desc">Collect,process and visualize tracing data. </p>
@@ -612,6 +612,9 @@ export default {
     }
     .process_desc {
         line-height: 1.2;
+    }
+    .roadmap-right {
+        padding:0px !important
     }
 }
 @media only screen and (max-width: 480px) {
