@@ -2,15 +2,15 @@
   <div class="index">
         <div class="header">
             <div class="header-container container"> 
-                <a href="/" style=" color: #fff;text-decoration: none;font-size: 26px;">
+                <a href="/" class="header-logo" style=" color: #fff;text-decoration: none;font-size: 26px;">
                     APM.AI
                 </a>
                 <nav class="header-nav list-inline">
                     <ul class="list-inline">
                         <li class="list-inline-item"><a class="header__link" href="https://github.com/koalatracing/koala">Download</a></li>
                         <li class="list-inline-item"><a class="header__link">Docs</a></li>
-                        <li class="list-inline-item"><a class="header__link">Demo</a></li> 
-                        <li class="list-inline-item"><a class="header__link" href="https://github.com/koalatracing/koala">  <img style="max-height:22px;color:#fff;margin-bottom:-4px" src="../assets/images/github.svg"></a></li>
+                        <li class="list-inline-item demo"><a class="header__link">Demo</a></li> 
+                        <li class="list-inline-item github-logo"><a class="header__link" href="https://github.com/koalatracing/koala">  <img style="max-height:22px;color:#fff;margin-bottom:-4px" src="../assets/images/github.svg"></a></li>
                     </ul>
                 </nav>
             </div> 
@@ -24,24 +24,25 @@
                  <a class="btn btn-medium btn-dark-ghost text-decoration-none margin-left-10" href="https://github.com/koalatracing/koala">Download</a>
             </div> 
             
-            <div  style="text-align:center;" >
-                <span style="position:absolute;margin-top:77px;margin-left:29px"><span  class="circle-item">Traces</span></span>
-                <span style="position:absolute;margin-top:152px;margin-left:-76px"><span  class="circle-item">Metrics</span></span>
-                <span style="position:absolute;margin-top:232px;margin-left:45px"><span  class="circle-item">Logs</span></span>
-                
-                <img src="../assets/images/hero-background.svg" class="header-bg" style="height:300px">
+            <div class="header-bg-container">
+                <div  style="text-align:center;" >
+                    <span style="position:absolute;margin-top:77px;margin-left:29px" class="traces"><span  class="circle-item">Traces</span></span>
+                    <span style="position:absolute;margin-top:152px;margin-left:-76px"  class="metrics"><span  class="circle-item">Metrics</span></span>
+                    <span style="position:absolute;margin-top:232px;margin-left:45px" class="logs"><span  class="circle-item">Logs</span></span>
+                    
+                    <img src="../assets/images/hero-background.svg" class="header-bg" style="height:300px">
 
-                <span style="position:absolute;margin-top:77px;margin-left:-87px"><span  class="circle-item">Visualization</span></span>
-                <span style="position:absolute;margin-top:152px;margin-left:10px"><span  class="circle-item">Correlation</span></span>
-                <span style="position:absolute;margin-top:230px;margin-left:-88px"><span  class="circle-item">Alerts</span></span>
+                    <span style="position:absolute;margin-top:77px;margin-left:-87px" class="visualize"><span  class="circle-item">Visualize</span></span>
+                    <span style="position:absolute;margin-top:152px;margin-left:10px" class="correlation"><span  class="circle-item">Correlate</span></span>
+                    <span style="position:absolute;margin-top:230px;margin-left:-88px" class="alert"><span  class="circle-item">Alert</span></span>
+                </div>
+
+                <div style="text-align:center;color:white;font-size:15px;margin-top:30px;padding-bottom:60px" class="header-bg-step">
+                    <span style="margin-left:-110px;">1. Collect data with OpenTelemetry/Pinpoint</span>
+                    <span style="margin-left:40px">2. Process raw data to structured </span>
+                    <span style="margin-left:60px">3. See your data in dashboard</span>
+                </div>
             </div>
-
-            <div style="text-align:center;color:white;font-size:15px;margin-top:30px;padding-bottom:60px" class="header-bg-step">
-                <span style="margin-left:-110px;">1. Collect data with OpenTelemetry/Pinpoint</span>
-                <span style="margin-left:40px">2. Process raw data to structured </span>
-                <span style="margin-left:60px">3. See your data in dashboard</span>
-            </div>
-
             <div id="boat"> 
               <img src="../assets/images/boat.gif" alt="Helmy" style="width:100px;">
             </div>
@@ -67,9 +68,6 @@
                             <p class="different__text different__text--traditional different__highlight--traditional">
                                 Limited supporting for alert
                             </p>
-                            <!-- <p class="different__text different__text--traditional">
-                                Manual agent deployment
-                            </p> -->
                             <p class="different__text different__text--traditional">
                                 Moderate performance
                             </p>
@@ -93,9 +91,6 @@
                             <p class="different__text different__text--trace different__highlight--trace">
                                 Customize alert from template to user,channel
                             </p>
-                            <!-- <p class="different__text different__text--trace">
-                                Auto deployment/update/keep-alive by tracecat agentd
-                            </p> -->
                             <p class="different__text different__text--trace">
                             Extremely performance: writing in go, scyllaDB supported
                             </p>
@@ -118,7 +113,7 @@
                 <div class="col-12 col-md-3 mb-3 mb-md-0 feature-card" style="margin-left:45px">
                     <div class="process__card">
                         <img class="process__dot process__dot--one" src="../assets/images/process__dot1.svg" alt="" style="left: -40px;top: 100px;">
-                        <div class="process__title">Traces,Metris&Logs</div>
+                        <div class="process__title">Traces,Metris &Logs</div>
                         <p class="process_desc">APM.AI unifies traces, logs and metrics in the core system. </p>
                     </div>
                 </div>
@@ -131,8 +126,8 @@
                 </div>
                 <div class="col-12 col-md-3 mb-3 mb-md-0 feature-card" style="margin-left:45px">
                     <div class="process__card">
-                        <img class="process__dot process__dot--one" src="../assets/images/process__dot1.svg" alt="" style="left: 196px;top: 178px;">
-                        <div class="process__title">Alert on critical issues</div>
+                        <img class="process__dot process__dot--one" src="../assets/images/process__dot1.svg" alt="" style="left: 15px;top: -10px;">
+                        <div class="process__title">Accurate Alert </div>
                         <p class="process_desc">You can build complex alerting logic using multiple trigger conditions</p>
                     </div>
                 </div>
@@ -141,11 +136,10 @@
         
         <div class="container feature-cards-2" style="margin-top:100px"> 
             <div class="row display-flex" style="text-align:center;position:relative">
-                <!-- <img class="process__path" src="../assets/images/process__path.svg" alt="" style="position:absolute;z-index:0;top:0px;top: -20px;left: -15px;"> -->
                 <div class="col-12 col-md-4 mb-3 mb-md-0 feature-card">
                     <div class="process__card">
                         <img class="process__dot process__dot--one" src="../assets/images/process__dot.svg" alt="" style="left: -13px;top: -10px;">
-                        <div class="process__title">Native support for OpenTelemetry</div>
+                        <div class="process__title">OpenTelemetry Native Support </div>
                         <p class="process_desc text-color">We support OpenTelemetry from scratch. <span class="extra-content">so you can use opentelemetry SDKs for instrumenting applications</span></p>
                     </div>
                 </div>
@@ -153,14 +147,14 @@
                     <div class="process__card">
                         <img class="process__dot process__dot--one" src="../assets/images/process__dot.svg" alt="" style="left: 60px;top: 180px;">
                         <div class="process__title">Pinpoint Compatible</div>
-                        <p class="process_desc">Your can use pinpoint agent to instrument JAVA applications, this is compatible with OpenTelemery</p>
+                        <p class="process_desc">Use pinpoint to instrument JAVA,compatible with OpenTelemery</p>
                     </div>
                 </div>
                 <div class="col-12 col-md-4 mb-3 mb-md-0 feature-card" style="margin-left:45px">
                     <div class="process__card">
                         <img class="process__dot process__dot--one" src="../assets/images/process__dot.svg" alt="" style="left: -40px;top: 76px;">
-                        <div class="process__title">100% Open-Source</div>
-                        <p class="process_desc"><a href="http://koa.la">Koala</a> is our open-source distribution, it includes 100% features in APM.AI!</p>
+                        <div class="process__title">OpenSource</div>
+                        <p class="process_desc"><a href="http://koa.la">Koala</a> is opensource distribution, it includes 100% features in APM.AI!</p>
                     </div>
                 </div>
             </div>
@@ -195,7 +189,7 @@
                          </div>
                           <div class="timeline-item" style="margin-top:100px;">
                              <a class="title" href="https://github.com/tracedt/koala/milestone/6">v0.4 - Alerting</a>
-                             <p class="desc">Build complex alerting logic using multiple trigger conditions, push alerts to multiple providers(sms,email,message etc).</p>
+                             <p class="desc">Build complex alerting logic using multiple trigger conditions, push alerts to multiple providers(sms, email etc).</p>
                          </div>
                          <div class="timeline-item" style="margin-top:100px;">
                              <a class="title" href="https://github.com/tracedt/koala/milestone/9" style="color:#6B07E5">v0.6 - Production Ready</a>
@@ -554,11 +548,39 @@ export default {
     .header-bg {
         width: 300px;
     }
+    .correlation {
+        margin-left:-30px !important;
+        margin-top: 167px !important;
+    }
+    .traces {
+        margin-left: -20px !important;
+        margin-top: 100px !important;
+    }
+    .logs {
+        margin-top: 190px !important;
+        margin-left:20px !important
+    }
+    .metrics {
+        margin-left: -55px !important
+    }
+    .visualize {
+        margin-top: 106px !important;
+        margin-left: -43px !important
+    }
+    .alert {
+        margin-top: 200px !important;
+        margin-left: -70px !important
+    }
+    .circle-item {
+        font-size: 12px !important;
+         padding:10px 6px !important;
+    }
      .timeline__bar {
         height: 1080px !important;
     }
     .more-power-bg {
         height: 250px !important;
+        width: 100% !important;
     }
     .foot-tooltip {
         width: 100% !important;
@@ -577,6 +599,61 @@ export default {
 
     #boat {
         display: none;
+    }
+    .correlation {
+        display:noe !important;
+    }
+    .github-logo {
+        margin-right:0px !important
+    }
+    .header-logo {
+        font-size:22px !important;
+        margin-top:-5px
+    }
+    .process__title {
+        line-height: 1.2;
+    }
+    .process_desc {
+        line-height: 1.2;
+    }
+}
+@media only screen and (max-width: 480px) {
+     .timeline__bar {
+        height: 1316px !important;
+    }
+    .header {
+        .btn-dark-ghost {
+            margin-left: 0 !important
+        }
+    }
+    .feature-card {
+        margin-left:0px !important
+    }
+}
+
+@media only screen and (max-width: 376px) {
+     .timeline__bar {
+        height: 1416px !important;
+    }
+    .demo {
+        display:none !important;
+    }
+     .correlation {
+        margin-left:-50px !important;
+        margin-top: 167px !important;
+    }
+    .foot-tooltip {
+        .btn {
+            display:inline-block
+        }
+    }
+    .btn-medium {
+        padding: 10px 20px;
+    } 
+}
+@media only screen and (max-width: 320px) {
+    .header-bg-container {
+        display: none !important;
     }
 }
 </style>
