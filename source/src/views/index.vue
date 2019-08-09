@@ -246,7 +246,7 @@
         <div class="container" style="text-align:center;padding-top:40px;padding-bottom:40px;font-size:14px;">
            Developed with  <img src="../assets/images/heart-icon.jpg" alt="Love" style="height:16px" > by APM.AI.
            <br />
-            © 2019 tracedt.com. All rights reserved.
+           Version 1.0 © 2019 tracedt.com. All rights reserved.
         </div>
     </div>
 </template>
@@ -425,7 +425,7 @@ export default {
     }
 
     to {
-        left: 100%
+        left: 80%
     }
 }
 
@@ -573,6 +573,10 @@ export default {
     }
     .features {
         margin-top: 30px !important
+    }
+
+    #boat {
+        display: none;
     }
 }
 </style>
