@@ -15,7 +15,7 @@
                 </nav>
             </div> 
             <div style="text-align:center;padding-top:20px;padding-bottom:10px">
-                <p class="title-large" style="color:#fff;font-size:26px;font-weight:bold;line-height:20px">Next-generation APM</p>
+                <p class="title-large" style="color:#fff;font-size:26px;font-weight:bold;line-height:20px">Next-generation OpenSource APM</p>
                 <p class="sub-title" style="font-size:18px">Blends APM with AI to bring you modern monitoring & analytics</p>
             </div> 
             
@@ -38,7 +38,7 @@
                 </div>
 
                 <div style="text-align:center;color:white;font-size:15px;margin-top:30px;padding-bottom:60px" class="header-bg-step">
-                    <span style="margin-left:-110px;">1. Collect data with OpenTelemetry/Pinpoint</span>
+                    <span style="margin-left:-110px;">1. Collect data with OpenTelemetry</span>
                     <span style="margin-left:40px">2. Process raw data to structured </span>
                     <span style="margin-left:60px">3. See your data in dashboard</span>
                 </div>
@@ -127,8 +127,8 @@
                 <div class="col-12 col-md-3 mb-3 mb-md-0 feature-card" style="margin-left:45px">
                     <div class="process__card">
                         <img class="process__dot process__dot--one" src="../assets/images/process__dot1.svg" alt="" style="left: 15px;top: -10px;">
-                        <div class="process__title">Accurate Alert </div>
-                        <p class="process_desc">You can build complex alerting logic using multiple trigger conditions</p>
+                        <div class="process__title">Smart </div>
+                        <p class="process_desc">AI powered APM delivers the intelligent analysis and alert.</p>
                     </div>
                 </div>
             </div>
