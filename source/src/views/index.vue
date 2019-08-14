@@ -34,7 +34,7 @@
 
                     <span style="position:absolute;margin-top:77px;margin-left:-87px" class="visualize"><span  class="circle-item">Visualize</span></span>
                     <span style="position:absolute;margin-top:152px;margin-left:10px" class="correlation"><span  class="circle-item">Correlate</span></span>
-                    <span style="position:absolute;margin-top:230px;margin-left:-88px" class="alert"><span  class="circle-item">Alert</span></span>
+                    <span style="position:absolute;margin-top:230px;margin-left:-88px" class="alert"><span  class="circle-item">Smart</span></span>
                 </div>
 
                 <div style="text-align:center;color:white;font-size:15px;margin-top:30px;padding-bottom:60px" class="header-bg-step">
