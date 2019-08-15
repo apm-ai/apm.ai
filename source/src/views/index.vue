@@ -14,7 +14,7 @@
                     </ul>
                 </nav>
             </div> 
-            <div style="text-align:center;padding-top:50px;padding-bottom:10px">
+            <div style="text-align:center;padding-top:40px;padding-bottom:10px">
                 <p class="title-large" style="color:#fff;font-size:26px;font-weight:bold">Next-generation OpenSource APM</p>
                 <p class="sub-title" style="font-size:18px">Blends APM with AI to bring you modern monitoring & analytics</p>
             </div> 
@@ -38,9 +38,9 @@
                 </div>
 
                 <div style="text-align:center;color:white;font-size:15px;margin-top:30px;padding-bottom:60px" class="header-bg-step">
-                    <span style="margin-left:-110px;">1. Collect data with OpenTelemetry</span>
-                    <span style="margin-left:40px">2. Process raw data to structured </span>
-                    <span style="margin-left:60px">3. See your data in dashboard</span>
+                    <span style="margin-left:-110px;">1. Collect raw data with OpenTelemetry</span>
+                    <span style="margin-left:40px">2. Raw data processing </span>
+                    <span style="margin-left:60px">3. Visualize and Analyze</span>
                 </div>
             </div>
             <div id="boat"> 
