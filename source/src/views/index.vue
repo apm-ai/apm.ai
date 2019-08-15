@@ -7,10 +7,10 @@
                 </a>
                 <nav class="header-nav list-inline">
                     <ul class="list-inline">
-                        <li class="list-inline-item"><a class="header__link" href="https://github.com/koalatracing/koala">Download</a></li>
-                        <li class="list-inline-item"><a class="header__link">Docs</a></li>
+                        <li class="list-inline-item"><a class="header__link" :href="downloadUrl">Download</a></li>
+                        <li class="list-inline-item"><a class="header__link" :href="docsUrl">Docs</a></li>
                         <li class="list-inline-item demo"><a class="header__link">Demo</a></li> 
-                        <li class="list-inline-item github-logo"><a class="header__link" href="https://github.com/koalatracing/koala">  <img style="max-height:22px;color:#fff;margin-bottom:-4px" src="../assets/images/github.svg"></a></li>
+                        <li class="list-inline-item github-logo"><a class="header__link" :slot="koalaUrl">  <img style="max-height:22px;color:#fff;margin-bottom:-4px" src="../assets/images/github.svg"></a></li>
                     </ul>
                 </nav>
             </div> 
@@ -20,8 +20,8 @@
             </div> 
             
             <div style="text-align:center; padding-bottom:10px;margin-top:20px">
-                 <a class="btn btn-medium btn-primary text-decoration-none" href="https://github.com/koalatracing/koala">Get Started</a>
-                 <a class="btn btn-medium btn-dark-ghost text-decoration-none margin-left-10" href="https://github.com/koalatracing/koala">Download</a>
+                 <a class="btn btn-medium btn-primary text-decoration-none" :href="docsUrl">Get Started</a>
+                 <a class="btn btn-medium btn-dark-ghost text-decoration-none margin-left-10" :href="downloadUrl">Download</a>
             </div> 
             
             <div class="header-bg-container">
@@ -75,12 +75,12 @@
                     </Col>
                     <Col  :xs="12" :sm="12" :md="12" :lg="10"  class="different__trace text-center" style="padding-bottom:30px;margin-top:11px;">
                         <div class="different__trace--small">
-                            <span style="font-size:30px;color:white" class="title-large">APM.AI (<a href="http://koa.la" style="color:white">Koala</a>)</span>
+                            <span style="font-size:30px;color:white" class="title-large">APM.AI (<a :href="koalaUrl" style="color:white">Koala</a>)</span>
                             <p class="different__text different__text--trace different__highlight--trace" style="margin-top:8px;">
                                 Tracing, metrics, logs
                             </p>
                             <p class="different__text different__text--trace" style="font-weight:bold">
-                                100% open-source (<a href="http://koa.la" style="color:white">Koala</a>), NO Commercial-Distribution
+                                100% open-source (<a :href="koalaUrl" style="color:white">Koala</a>), NO Commercial-Distribution
                             </p>
                             <p class="different__text different__text--trace different__highlight--trace">
                                 Fully functional server map
@@ -154,7 +154,7 @@
                     <div class="process__card">
                         <img class="process__dot process__dot--one" src="../assets/images/process__dot.svg" alt="" style="left: -40px;top: 76px;">
                         <div class="process__title">OpenSource</div>
-                        <p class="process_desc"><a href="http://koa.la">Koala</a> is opensource distribution, it includes 100% features in APM.AI!</p>
+                        <p class="process_desc"><a :href="koalaUrl">Koala</a> is opensource distribution, it includes 100% features in APM.AI!</p>
                     </div>
                 </div>
             </div>
@@ -167,43 +167,43 @@
                      <Col :xs="12" :sm="12" :md="12" :lg="{ span: 10, offset: 2 }">
                        
                          <div class="timeline-item">
-                             <a class="title" href="https://github.com/tracedt/koala/milestone/1">v0.1 - Server-side agent</a>  <span class="tag blue">IN DEV</span>
+                             <a class="title" :href="koalaUrl + '/milestone/1'">v0.1 - Server-side agent</a>  <span class="tag blue">IN DEV</span>
                              <p class="desc">Collect opentelemetry data , send them to Koala-Collector.</p>
                          </div>
                         <div class="timeline-item" style="margin-top:135px;">
-                             <a class="title" href="https://github.com/tracedt/koala/milestone/4">v0.3 - Tracing Metrics Support</a>
+                             <a class="title" :href="koalaUrl + '/milestone/4'">v0.3 - Tracing Metrics Support</a>
                              <p class="desc">Extract general metrics from tracing data, such as url, sql, exception, method etc, visualize them in dashboard.</p>
                          </div>
                          <div class="timeline-item" style="margin-top:115px;">
-                             <a class="title" href="https://github.com/tracedt/koala/milestone/5">v0.5 - Dependency Analyzing</a>
+                             <a class="title" :href="koalaUrl + '/milestone/5'">v0.5 - Dependency Analyzing</a>
                              <p class="desc">Analyze the dependency data(server,url), output the server-map and url-map.</p>
                          </div>
                           <div class="timeline-item" style="margin-top:105px;">
-                             <a class="title" href="https://github.com/tracedt/koala/milestone/2">v0.7 - Pinpoint supported</a>
+                             <a class="title" :href="koalaUrl + '/milestone/2'">v0.7 - Pinpoint supported</a>
                              <p class="desc">Make pinpoint compatible with OpenTelemetry</p>
                          </div>
                      </Col>
                      <Col :xs="12" :sm="12" :md="12" :lg="10" class="roadmap-right">
                         <div class="timeline-item" style="margin-top:110px;">
-                             <a class="title" href="https://github.com/tracedt/koala/milestone/3">v0.2 - Tracing Support</a> <span class="tag blue">IN DEV</span>
+                             <a class="title" :href="koalaUrl + '/milestone/3'">v0.2 - Tracing Support</a> <span class="tag blue">IN DEV</span>
                              <p class="desc">Collect,process and visualize tracing data. </p>
                          </div>
                           <div class="timeline-item" style="margin-top:100px;">
-                             <a class="title" href="https://github.com/tracedt/koala/milestone/6">v0.4 - Alerting</a>
+                             <a class="title" :href="koalaUrl + '/milestone/6'">v0.4 - Alerting</a>
                              <p class="desc">Build complex alerting logic using multiple trigger conditions, push alerts to multiple providers(sms, email etc).</p>
                          </div>
                          <div class="timeline-item" style="margin-top:100px;">
-                             <a class="title" href="https://github.com/tracedt/koala/milestone/9" style="color:#6B07E5">v0.6 - Production Ready</a>
+                             <a class="title" :href="koalaUrl + '/milestone/9'" style="color:#6B07E5">v0.6 - Production Ready</a>
                              <p class="desc">Test in real production environment for about 6-8 weeks, fix all critical bugs.</p>
                          </div>
                           <div class="timeline-item" style="margin-top:100px;">
-                             <a class="title" href="https://github.com/tracedt/koala/milestone/7">v0.8 - Metrics Support</a>
+                             <a class="title" :href="koalaUrl + '/milestone/7'">v0.8 - Metrics Support</a>
                              <p class="desc">Collect infrastructure and user-define metrics,correlate them with tracing data, output metrics to popular metrics storages.</p>
                          </div>
                      </Col>
                 </Row>
                 <div class="timeline__majorversion d-none d-sm-block" style="z-index:100">
-                    <a style="position:absolute;margin-left:-30px;margin-top:38px;text-decoration:none;color:white" href="https://github.com/tracedt/koala/milestone/8">
+                    <a style="position:absolute;margin-left:-30px;margin-top:38px;text-decoration:none;color:white" :href="koalaUrl + '/milestone/8'">
                     V1.0
                     </a>
                 </div>
@@ -228,8 +228,8 @@
                          </div>
                      </div>
                      <div class="col-12 col-md-6 mb-3 mb-md-0" style="padding-top:6px;text-align:center">
-                         <a class="btn btn-medium btn-primary text-decoration-none" href="https://github.com/koalatracing/koala">Get Started</a>
-                         <div style="margin-top:18px"> <a class="btn btn-medium btn-dark-ghost text-decoration-none margin-left-5" href="https://github.com/koalatracing/koala">Download</a></div>
+                         <a class="btn btn-medium btn-primary text-decoration-none" :href="docsUrl">Get Started</a>
+                         <div style="margin-top:18px"> <a class="btn btn-medium btn-dark-ghost text-decoration-none margin-left-5" :href="downloadUrl">Download</a></div>
                         
                      </div>
                  </div>
@@ -251,7 +251,10 @@ export default {
   data () {
     return {
       hello: '',
-      world: ''
+      world: '',
+      docsUrl: 'https://docs.apm.ai',
+      downloadUrl: 'https://github.com/apm-ai/koala/releases',
+      koalaUrl: 'https://github.com/apm-ai/koala'
     }
   },
   watch: { 
