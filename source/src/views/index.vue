@@ -40,7 +40,7 @@
                 <div style="text-align:center;color:white;font-size:15px;margin-top:30px;padding-bottom:60px" class="header-bg-step">
                     <span style="margin-left:-110px;">1. Collect raw data with OpenTelemetry</span>
                     <span style="margin-left:40px">2. Raw data processing </span>
-                    <span style="margin-left:60px">3. Visualize and Analyze</span>
+                    <span style="margin-left:60px">3. Visualization and Analysis</span>
                 </div>
             </div>
             <div id="boat"> 
