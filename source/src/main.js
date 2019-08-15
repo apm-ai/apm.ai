@@ -4,6 +4,11 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
+import { Row, Col } from 'iview';
+Vue.component('Row', Row);
+Vue.component('Col', Col);
+
+import 'iview/dist/styles/iview.css';
 
 // 全局范围加载通用样式，每个vue page里无需重复引入
 import '!style-loader!css-loader!less-loader!./theme/class.less'

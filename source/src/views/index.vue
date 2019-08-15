@@ -2,7 +2,7 @@
   <div class="index">
         <div class="header">
             <div class="header-container container"> 
-                <a href="/" class="header-logo title-large" style=" color: #fff;text-decoration: none;font-size: 26px;">
+                <a href="/" class="header-logo title-large" style=" color: #fff;text-decoration: none;font-size: 26px;margin-top:10px">
                     APM.AI
                 </a>
                 <nav class="header-nav list-inline">
@@ -14,12 +14,12 @@
                     </ul>
                 </nav>
             </div> 
-            <div style="text-align:center;padding-top:20px;padding-bottom:10px">
-                <p class="title-large" style="color:#fff;font-size:26px;font-weight:bold;line-height:20px">Next-generation OpenSource APM</p>
+            <div style="text-align:center;padding-top:50px;padding-bottom:10px">
+                <p class="title-large" style="color:#fff;font-size:26px;font-weight:bold">Next-generation OpenSource APM</p>
                 <p class="sub-title" style="font-size:18px">Blends APM with AI to bring you modern monitoring & analytics</p>
             </div> 
             
-            <div style="text-align:center; padding-bottom:10px">
+            <div style="text-align:center; padding-bottom:10px;margin-top:20px">
                  <a class="btn btn-medium btn-primary text-decoration-none" href="https://github.com/koalatracing/koala">Get Started</a>
                  <a class="btn btn-medium btn-dark-ghost text-decoration-none margin-left-10" href="https://github.com/koalatracing/koala">Download</a>
             </div> 
@@ -49,10 +49,10 @@
         </div>
         <div style="background:#3fb1e5">
             <div class="compare container" style="text-align:center">
-                <div class="row display-flex"  style="padding-top:25px">
-                    <div class="d-none d-md-block col-md-5 text-center" style="margin-top:10px;">
+                <Row class="row" style="padding-top:25px">
+                    <Col :xs="12" :sm="12" :md="12" :lg="{ span: 10, offset: 2 }"  class="text-center" style="margin-top:10px;">
                         <div class="different__traditional" style="color:rgba(0, 34, 64, 0.5)">
-                            <h5 class="different__traditional--title" style="font-size:16px;padding-top:22px;">Traditional APM</h5>
+                            <h5 class="different__traditional--title" style="font-size:16px;padding-top:22px;padding-bottom:20px">Traditional APM</h5>
                             <p class="different__text different__text--traditional different__highlight--traditional">
                                 Mainly distributed tracing
                             </p>
@@ -72,12 +72,12 @@
                                 Moderate performance
                             </p>
                         </div>
-                    </div>
-                    <div class="different__trace col-12 col-md-7 text-center" style="padding-bottom:30px;margin-top:11px;">
+                    </Col>
+                    <Col  :xs="12" :sm="12" :md="12" :lg="10"  class="different__trace text-center" style="padding-bottom:30px;margin-top:11px;">
                         <div class="different__trace--small">
                             <span style="font-size:30px;color:white" class="title-large">APM.AI (<a href="http://koa.la" style="color:white">Koala</a>)</span>
-                            <p class="different__text different__text--trace different__highlight--trace" style="margin-top:41px;">
-                                Distributed tracing, metrics, logs
+                            <p class="different__text different__text--trace different__highlight--trace" style="margin-top:8px;">
+                                Tracing, metrics, logs
                             </p>
                             <p class="different__text different__text--trace" style="font-weight:bold">
                                 100% open-source (<a href="http://koa.la" style="color:white">Koala</a>), NO Commercial-Distribution
@@ -89,14 +89,14 @@
                                 Beautiful and interactive UI
                             </p>
                             <p class="different__text different__text--trace different__highlight--trace">
-                                Customize alert from template to user,channel
+                                Alert powered by AI
                             </p>
                             <p class="different__text different__text--trace">
                             Extremely performance: writing in go, scyllaDB supported
                             </p>
                         </div>
-                    </div>
-                </div>
+                    </Col>
+                </Row>
             </div>
         </div>
         <div class="container features" style="margin-top:60px"> 
@@ -161,10 +161,11 @@
         </div> 
           <div class="roadmap background-grey" style="margin-top:50px;padding-bottom:200px"> 
             <div class="container" style="padding-top:40px;line-height:1.5"> 
-                <div style="font-size:28px;">Where We're Headed (Roadmap)</div>
-                <div class="row display-flex" style="padding-top:30px;padding-left:15px">
+                  <div style="font-size:28px;">Where We're Headed (Roadmap)</div>
+                <Row  style="padding-top:50px;">
                     <div class="timeline__bar"></div>
-                     <div class="col-12 col-md-6 mb-3 mb-md-0">
+                     <Col :xs="12" :sm="12" :md="12" :lg="{ span: 10, offset: 2 }">
+                       
                          <div class="timeline-item">
                              <a class="title" href="https://github.com/tracedt/koala/milestone/1">v0.1 - Server-side agent</a>  <span class="tag blue">IN DEV</span>
                              <p class="desc">Collect opentelemetry data , send them to Koala-Collector.</p>
@@ -181,8 +182,8 @@
                              <a class="title" href="https://github.com/tracedt/koala/milestone/2">v0.7 - Pinpoint supported</a>
                              <p class="desc">Make pinpoint compatible with OpenTelemetry</p>
                          </div>
-                     </div>
-                     <div class="col-12 col-md-6 mb-3 mb-md-0 roadmap-right" style="padding-left:8px">
+                     </Col>
+                     <Col :xs="12" :sm="12" :md="12" :lg="10" class="roadmap-right">
                         <div class="timeline-item" style="margin-top:110px;">
                              <a class="title" href="https://github.com/tracedt/koala/milestone/3">v0.2 - Tracing Support</a> <span class="tag blue">IN DEV</span>
                              <p class="desc">Collect,process and visualize tracing data. </p>
@@ -199,8 +200,8 @@
                              <a class="title" href="https://github.com/tracedt/koala/milestone/7">v0.8 - Metrics Support</a>
                              <p class="desc">Collect infrastructure and user-define metrics,correlate them with tracing data, output metrics to popular metrics storages.</p>
                          </div>
-                     </div>
-                </div>
+                     </Col>
+                </Row>
                 <div class="timeline__majorversion d-none d-sm-block" style="z-index:100">
                     <a style="position:absolute;margin-left:-30px;margin-top:38px;text-decoration:none;color:white" href="https://github.com/tracedt/koala/milestone/8">
                     V1.0
@@ -419,12 +420,12 @@ export default {
     }
 
     to {
-        left: 80%
+        left: 100%
     }
 }
 
 #boat {
-    width: 150px;
+    width: 100px;
     position: absolute;
     z-index: 1200;
     bottom: -15px;
@@ -628,6 +629,9 @@ export default {
     }
     .feature-card {
         margin-left:0px !important
+    }
+    #boat {
+        display: none !important;
     }
 }
 
