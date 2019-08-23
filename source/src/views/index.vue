@@ -2,21 +2,22 @@
   <div class="index">
         <div class="header">
             <div class="header-container container"> 
-                <a href="/" class="header-logo title-large" style=" color: #fff;text-decoration: none;font-size: 26px;margin-top:10px">
-                    APM.AI
+                <a href="/" class="header-logo title-large" style=" color: #fff;text-decoration: none;font-size: 23px;margin-top:10px">
+                   <img style="max-height:70px;color:#fff;" src="../assets/images/logo-maker-png-5.png">
+                   <span style="position:absolute;top:46px;margin-left:67px">APM Labs</span>
                 </a>
                 <nav class="header-nav list-inline">
                     <ul class="list-inline">
                         <li class="list-inline-item"><a class="header__link" :href="downloadUrl">Download</a></li>
                         <li class="list-inline-item"><a class="header__link" :href="docsUrl">Docs</a></li>
                         <li class="list-inline-item demo"><a class="header__link">Demo</a></li> 
-                        <li class="list-inline-item github-logo"><a class="header__link" :slot="koalaUrl">  <img style="max-height:22px;color:#fff;margin-bottom:-4px" src="../assets/images/github.svg"></a></li>
+                        <li class="list-inline-item github-logo"><a class="header__link" :href="koalaUrl">  <img style="max-height:22px;color:#fff;margin-bottom:-4px" src="../assets/images/github.svg"></a></li>
                     </ul>
                 </nav>
             </div> 
-            <div style="text-align:center;padding-top:40px;padding-bottom:10px">
-                <p class="title-large" style="color:#fff;font-size:26px;font-weight:bold">Next-generation OpenSource APM</p>
-                <p class="sub-title" style="font-size:18px">Blends APM with AI to bring you modern monitoring & analytics</p>
+            <div style="text-align:center;padding-top:30px;padding-bottom:10px" class="header-title">
+                <p class="title-large" style="color:#fff;font-size:26px;font-weight:bold">Building next-generation opensource APM</p>
+                <p class="sub-title" style="font-size:18px">A research, development institution for improving monitoring technology</p>
             </div> 
             
             <div style="text-align:center; padding-bottom:10px;margin-top:20px">
@@ -24,7 +25,7 @@
                  <a class="btn btn-medium btn-dark-ghost text-decoration-none margin-left-10" :href="downloadUrl">Download</a>
             </div> 
             
-            <div class="header-bg-container">
+            <div class="header-bg-container margin-top-20">
                 <div  style="text-align:center;" >
                     <span style="position:absolute;margin-top:77px;margin-left:29px" class="traces"><span  class="circle-item">Traces</span></span>
                     <span style="position:absolute;margin-top:152px;margin-left:-76px"  class="metrics"><span  class="circle-item">Metrics</span></span>
@@ -46,10 +47,9 @@
             <div id="boat"> 
               <img src="../assets/images/boat.gif" alt="Helmy" style="width:100px;">
             </div>
-        </div>
-        <div style="background:#3fb1e5">
-            <div class="compare container" style="text-align:center">
-                <Row class="row" style="padding-top:25px">
+
+             <div class="compare" style="text-align:center">
+                <Row class="row" style="padding-top:25px;padding-left:100px;padding-right:100px">
                     <Col :xs="12" :sm="12" :md="12" :lg="{ span: 10, offset: 2 }"  class="text-center" style="margin-top:10px;">
                         <div class="different__traditional" style="color:rgba(0, 34, 64, 0.5)">
                             <h5 class="different__traditional--title" style="font-size:16px;padding-top:22px;padding-bottom:20px">Traditional APM</h5>
@@ -98,6 +98,9 @@
                     </Col>
                 </Row>
             </div>
+        </div>
+        <div>
+           
         </div>
         <div class="container features" style="margin-top:60px"> 
             <h1 class="title-color" style="text-align:center">Core Features</h1>
@@ -282,10 +285,11 @@ export default {
 <style lang="less" scoped> 
 @import "../theme/var.less";
 .header {
+    // height: 101vh;
     position: relative;
     // background: rgba(255,255,255,0.80);
     padding: 20px 0;
-   background-image: radial-gradient(circle at center 70%, #004AB0, #001B3D 50%);
+   background:  url("../assets/images/grd_main.jpg") no-repeat 45% 45%;
     box-sizing: border-box;
     .header-container {
         align-items: center;
@@ -335,16 +339,16 @@ export default {
     background-position: center center;
 }
 
-.header::after {
-    background: url(../assets/images/waves.png) 0 0 repeat-x;
-    background-size: 20px;
-    bottom: 0;
-    content: "";
-    display: block;
-    height: 6px;
-    position: absolute;
-    width: 100%;
-}
+// .header::after {
+//     background: url(../assets/images/waves.png) 0 0 repeat-x;
+//     background-size: 20px;
+//     bottom: 0;
+//     content: "";
+//     display: block;
+//     height: 6px;
+//     position: absolute;
+//     width: 100%;
+// }
 .compare {
     padding-bottom:45px;
     text-align: center;
@@ -591,6 +595,27 @@ export default {
         margin-left:0% !important;
         padding:30px 0px !important;
     }
+    .compare {
+        .row {
+            padding-left:0px !important;
+             padding-right:0px !important;
+             padding-top:0px !important;
+        }
+    }
+        #boat {
+        display: none !important;
+    }
+    .header-title  {
+        .title-large {
+            font-size: 20px !important
+        }
+        .sub-title {
+            font-size: 16px !important;
+        }
+    }
+    .header-bg-container  {
+        margin-top:0px !important;
+    }
 }
 
 @media only screen and (max-width: 576px) {
@@ -633,9 +658,7 @@ export default {
     .feature-card {
         margin-left:0px !important
     }
-    #boat {
-        display: none !important;
-    }
+
 }
 
 @media only screen and (max-width: 376px) {
