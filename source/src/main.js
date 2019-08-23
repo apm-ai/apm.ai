@@ -4,10 +4,9 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
-import { Row, Col,Divider } from 'iview';
+import { Row, Col } from 'iview';
 Vue.component('Row', Row);
 Vue.component('Col', Col);
-Vue.component('Divider', Divider);
 
 import 'iview/dist/styles/iview.css';
 
