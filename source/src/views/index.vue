@@ -80,7 +80,7 @@
                                 Tracing, metrics, logs
                             </p>
                             <p class="different__text different__text--trace" style="font-weight:bold">
-                                100% open-source (<a :href="koalaUrl" style="color:white">Koala</a>), NO Commercial-Distribution
+                                100% open-source ,NO Commercial Distribution
                             </p>
                             <p class="different__text different__text--trace different__highlight--trace">
                                 Fully functional server map
@@ -645,8 +645,11 @@ export default {
     }
     .feature-card {
         margin-left:0px !important
-    }
+    }   
 
+    .compare {
+        font-size:13px
+    }
 }
 
 @media only screen and (max-width: 376px) {
