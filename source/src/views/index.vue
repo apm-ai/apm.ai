@@ -8,10 +8,10 @@
                 </a>
                 <nav class="header-nav list-inline">
                     <ul class="list-inline">
-                        <li class="list-inline-item"><a class="header__link" :href="downloadUrl">Download</a></li>
-                        <li class="list-inline-item"><a class="header__link" :href="docsUrl">Docs</a></li>
+                                                <li class="list-inline-item"><a class="header__link" :href="docsUrl">Docs</a></li>
                         <li class="list-inline-item demo"><a class="header__link">Demo</a></li> 
-                        <li class="list-inline-item github-logo"><a class="header__link" :href="koalaUrl">  <img style="max-height:22px;color:#fff;margin-bottom:-4px" src="../assets/images/github.svg"></a></li>
+                        <li class="list-inline-item download"><a class="header__link" :href="downloadUrl">Download</a></li>
+                        <li class="list-inline-item github-logo"><a class="header__link" :href="apmUrl">  <img style="max-height:22px;color:#fff;margin-bottom:-4px" src="../assets/images/github.svg"></a></li>
                     </ul>
                 </nav>
             </div> 
@@ -22,7 +22,7 @@
             
             <div style="text-align:center; padding-bottom:10px;margin-top:20px">
                  <a class="btn btn-medium btn-primary text-decoration-none" :href="docsUrl">Get Started</a>
-                 <a class="btn btn-medium btn-dark-ghost text-decoration-none margin-left-10" :href="downloadUrl">Download</a>
+                 <a class="btn btn-medium btn-dark-ghost text-decoration-none margin-left-10">Online Demo</a>
             </div> 
             
             <div class="header-bg-container margin-top-20">
@@ -47,7 +47,7 @@
             <div id="boat"> 
               <img src="../assets/images/boat.gif" alt="Helmy" style="width:100px;">
             </div>
-
+            
              <div class="compare" style="text-align:center">
                 <Row class="row" style="padding-top:25px;padding-left:100px;padding-right:100px">
                     <Col :xs="12" :sm="12" :md="12" :lg="{ span: 10, offset: 2 }"  class="text-center" style="margin-top:10px;">
@@ -75,7 +75,7 @@
                     </Col>
                     <Col  :xs="12" :sm="12" :md="12" :lg="10"  class="different__trace text-center" style="padding-bottom:30px;margin-top:11px;">
                         <div class="different__trace--small">
-                            <span style="font-size:30px;color:white" class="title-large">APM.AI (<a :href="koalaUrl" style="color:white">Koala</a>)</span>
+                            <span style="font-size:30px;color:white" class="title-large"><a :href="koalaUrl" style="color:white">Koala</a></span>
                             <p class="different__text different__text--trace different__highlight--trace" style="margin-top:8px;">
                                 Tracing, metrics, logs
                             </p>
@@ -102,68 +102,60 @@
         <div>
            
         </div>
-        <div class="container features" style="margin-top:60px"> 
-            <h1 class="title-color" style="text-align:center">Core Features</h1>
-            <div class="row display-flex" style="text-align:center;position:relative">
-                <img class="process__path features-link" src="../assets/images/process__path.svg" alt="" style="position:absolute;z-index:0;top:0px;top: -20px;left: -15px;">
-                <div class="col-12 col-md-3 mb-3 mb-md-0 feature-card">
-                    <div class="process__card">
-                        <img class="process__dot process__dot--one" src="../assets/images/process__dot1.svg" alt="" style="left: -40px;top: 23px;">
-                        <div class="process__title">Blistering Fast</div>
-                        <p class="process_desc text-color">Built in Go/Rust, we are blistering fast and memory efficient.</p>
-                    </div>
-                </div>
-                <div class="col-12 col-md-3 mb-3 mb-md-0 feature-card" style="margin-left:45px">
-                    <div class="process__card">
-                        <img class="process__dot process__dot--one" src="../assets/images/process__dot1.svg" alt="" style="left: -40px;top: 100px;">
-                        <div class="process__title">Traces,Metris &Logs</div>
-                        <p class="process_desc">APM.AI unifies traces, logs and metrics in the core system. </p>
-                    </div>
-                </div>
-                <div class="col-12 col-md-3 mb-3 mb-md-0 feature-card" style="margin-left:45px">
-                    <div class="process__card">
-                        <img class="process__dot process__dot--one" src="../assets/images/process__dot1.svg" alt="" style="left: -40px;top: 30px;">
-                        <div class="process__title">Full Visibility</div>
-                        <p class="process_desc">See every aspect of your applications and users in real-time</p>
-                    </div>
-                </div>
-                <div class="col-12 col-md-3 mb-3 mb-md-0 feature-card" style="margin-left:45px">
-                    <div class="process__card">
-                        <img class="process__dot process__dot--one" src="../assets/images/process__dot1.svg" alt="" style="left: 15px;top: -10px;">
-                        <div class="process__title">Smart </div>
-                        <p class="process_desc">AI powered APM delivers the intelligent analysis and alert.</p>
-                    </div>
-                </div>
-            </div>
-        </div> 
-        
-        <div class="container feature-cards-2" style="margin-top:100px"> 
-            <div class="row display-flex" style="text-align:center;position:relative">
-                <div class="col-12 col-md-4 mb-3 mb-md-0 feature-card">
-                    <div class="process__card">
-                        <img class="process__dot process__dot--one" src="../assets/images/process__dot.svg" alt="" style="left: -13px;top: -10px;">
-                        <div class="process__title">OpenTelemetry Native Support </div>
-                        <p class="process_desc text-color">We support OpenTelemetry from scratch. <span class="extra-content">so you can use opentelemetry SDKs for instrumenting applications</span></p>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 mb-3 mb-md-0 feature-card" style="margin-left:45px">
-                    <div class="process__card">
-                        <img class="process__dot process__dot--one" src="../assets/images/process__dot.svg" alt="" style="left: 60px;top: 180px;">
-                        <div class="process__title">Pinpoint Compatible</div>
-                        <p class="process_desc">Use pinpoint to instrument JAVA,compatible with OpenTelemery</p>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 mb-3 mb-md-0 feature-card" style="margin-left:45px">
-                    <div class="process__card">
-                        <img class="process__dot process__dot--one" src="../assets/images/process__dot.svg" alt="" style="left: -40px;top: 76px;">
-                        <div class="process__title">OpenSource</div>
-                        <p class="process_desc"><a :href="koalaUrl">Koala</a> is opensource distribution, it includes 100% features in APM.AI!</p>
-                    </div>
-                </div>
-            </div>
-        </div> 
-          <div class="roadmap background-grey" style="margin-top:50px;padding-bottom:200px"> 
-            <div class="container" style="padding-top:40px;line-height:1.5"> 
+
+        <div class="margin-top-20 core-features">
+            <Row>
+                <Col :xs="24" :sm="24" :md="24" :lg="{ span: 16, offset: 4 }">
+                    <Row  style="text-align:center" class="margin-top-10">
+                         <Col :xs="12" :sm="12" :md="8" :lg="8">
+                            <div class="feature">
+                                <img src="../assets/images/feature-fast.png">
+                            </div>
+                            <div class="title">Blistering Fast</div>
+                            <div class="content">Built in Go/Rust, we are blistering fast and memory efficient.</div>
+                        </Col>
+                         <Col :xs="12" :sm="12" :md="8" :lg="8">
+                            <div class="feature">
+                                <img src="../assets/images/feature-agnostic.png">
+                            </div>
+                            <div class="title">OpenSource</div>
+                            <div class="content">Our products are 100% open-source, no commercial-version in the future!</div>
+                        </Col>
+                         <Col :xs="12" :sm="12" :md="8" :lg="8">
+                             <div class="feature">
+                                <img src="../assets/images/feature-distributed.png">
+                            </div>
+                            <div class="title">Full Visibility</div>
+                            <div class="content">See every aspect of your applications and users in real-time</div>
+                        </Col>
+                         <Col :xs="12" :sm="12" :md="8" :lg="8">
+                            <div class="feature">
+                                <img src="../assets/images/feature-logs.png">
+                            </div>
+                            <div class="title">Traces,Metris &Logs</div>
+                            <div class="content">APM.AI unifies traces, logs and metrics in the core system.</div>
+                        </Col>
+                         <Col :xs="12" :sm="12" :md="8" :lg="8">
+                            <div class="feature">
+                                <img src="../assets/images/feature-transforms.png">
+                            </div>
+                            <div class="title">Smart</div>
+                            <div class="content">AI powered APM delivers the intelligent analysis and alert.</div>
+                        </Col>
+                        <Col :xs="12" :sm="12" :md="8" :lg="8">
+                             <div class="feature">
+                                <img src="../assets/images/feature-delivery.png">
+                            </div>
+                            <div class="title">Multi Data Supported</div>
+                            <div class="content">You can use opentelemetry and pinpoint agent to collect data</div>
+                        </Col>
+                    </Row>
+                </Col>
+            </Row>
+        </div>
+      
+          <Row class="roadmap background-grey" style="margin-top:50px;padding-bottom:100px;padding-top:50px"> 
+            <Col :xs="24" :sm="24" :md="24" :lg="{ span: 16, offset: 4 }"  style="line-height:1.5"> 
                   <div style="font-size:28px;">Where We're Headed (Roadmap)</div>
                 <Row  style="padding-top:50px;">
                     <div class="timeline__bar"></div>
@@ -174,7 +166,7 @@
                              <p class="desc">Collect opentelemetry data , send them to Koala-Collector.</p>
                          </div>
                         <div class="timeline-item" style="margin-top:135px;">
-                             <a class="title" :href="koalaUrl + '/milestone/4'">v0.3 - Tracing Metrics Support</a>
+                             <a class="title" :href="koalaUrl + '/milestone/3'">v0.3 - Tracing Metrics Support</a>
                              <p class="desc">Extract general metrics from tracing data, such as url, sql, exception, method etc, visualize them in dashboard.</p>
                          </div>
                          <div class="timeline-item" style="margin-top:115px;">
@@ -182,36 +174,35 @@
                              <p class="desc">Analyze the dependency data(server,url), output the server-map and url-map.</p>
                          </div>
                           <div class="timeline-item" style="margin-top:105px;">
-                             <a class="title" :href="koalaUrl + '/milestone/2'">v0.7 - Pinpoint supported</a>
-                             <p class="desc">Make pinpoint compatible with OpenTelemetry</p>
+                             <a class="title" :href="koalaUrl + '/milestone/7'">v0.7 - Pinpoint supported</a>
+                             <p class="desc"> 1. Modified pinpoint-agent.jar to support OpenTelemery 2. Convert pinpoint-format to opentelemetry-format</p>
+                         </div>
+                         <div class="timeline-item" style="margin-top:80px;">
+                             <a class="title" :href="koalaUrl + '/milestone/7'">Future - Logs Support</a>
+                             <p class="desc">Collect logs in Koala-Agent(integrated with filebeat etc), correlate logs with tracing and metrcs, output logs to popular metrics storages, visualize and search them in Koala-Dashboard</p>
                          </div>
                      </Col>
                      <Col :xs="12" :sm="12" :md="12" :lg="10" class="roadmap-right">
                         <div class="timeline-item" style="margin-top:110px;">
-                             <a class="title" :href="koalaUrl + '/milestone/3'">v0.2 - Tracing Support</a> <span class="tag blue">IN DEV</span>
+                             <a class="title" :href="koalaUrl + '/milestone/2'">v0.2 - Tracing Support</a> <span class="tag blue">IN DEV</span>
                              <p class="desc">Collect,process and visualize tracing data. </p>
                          </div>
                           <div class="timeline-item" style="margin-top:100px;">
-                             <a class="title" :href="koalaUrl + '/milestone/6'">v0.4 - Alerting</a>
+                             <a class="title" :href="koalaUrl + '/milestone/4'">v0.4 - Alerting</a>
                              <p class="desc">Build complex alerting logic using multiple trigger conditions, push alerts to multiple providers(sms, email etc).</p>
                          </div>
                          <div class="timeline-item" style="margin-top:100px;">
-                             <a class="title" :href="koalaUrl + '/milestone/9'" style="color:#6B07E5">v0.6 - Production Ready</a>
-                             <p class="desc">Test in real production environment for about 6-8 weeks, fix all critical bugs.</p>
+                             <a class="title" :href="koalaUrl + '/milestone/6'" >v0.6 - Metrics Support.</a>
+                             <p class="desc">Collect infrastructure and user-define metrics,correlate them with tracing data, output metrics to popular metrics storages</p>
                          </div>
                           <div class="timeline-item" style="margin-top:100px;">
-                             <a class="title" :href="koalaUrl + '/milestone/7'">v0.8 - Metrics Support</a>
-                             <p class="desc">Collect infrastructure and user-define metrics,correlate them with tracing data, output metrics to popular metrics storages.</p>
+                             <a class="title" :href="koalaUrl + '/milestone/8'" style="color:#6B07E5">v1.0 - Production Ready</a>
+                             <p class="desc">Test in real production environment for at least 6 weeks, fix all critical bugs.</p>
                          </div>
                      </Col>
                 </Row>
-                <div class="timeline__majorversion d-none d-sm-block" style="z-index:100">
-                    <a style="position:absolute;margin-left:-30px;margin-top:38px;text-decoration:none;color:white" :href="koalaUrl + '/milestone/8'">
-                    V1.0
-                    </a>
-                </div>
-            </div>
-        </div>
+            </Col>
+        </Row>
         <div class="background--powers" style="padding-bottom:100px"> 
             <div class="container" style="padding-top:40px;">  
                 <div style="font-size:24px;font-weight:bold;color:white; more-power-title">Gives You More Super Powers</div>
@@ -257,7 +248,8 @@ export default {
       world: '',
       docsUrl: 'https://docs.apm.ai',
       downloadUrl: 'https://github.com/apm-ai/koala/releases',
-      koalaUrl: 'https://github.com/apm-ai/koala'
+      koalaUrl: 'https://github.com/apm-ai/koala',
+      apmUrl: 'https://github.com/apm-ai'
     }
   },
   watch: { 
@@ -354,7 +346,7 @@ export default {
     text-align: center;
     padding-right: 15px;
     padding-left: 15px;
-    // color:#fff ;
+    color:#fff ;
     .row {
         margin-right: -15px;
         margin-left: -15px;
@@ -366,8 +358,7 @@ export default {
             position: relative;
             // right: -15px;
             top: 35px;
-            color: #002240;
-            background: rgba(255,255,255,0.80);
+            background: rgba(255,255,255,0.50);
             box-shadow: 0 4px 10px 0 rgba(0,0,0,0.10);
             border-radius: 10px 0 0 10px;
         }
@@ -400,26 +391,44 @@ export default {
         }
     }
 }
-.col-md-3 {
-    background: rgba(255,255,255,.6);
-    z-index:10
-}
-.process__card {
-    padding: 0px 25px;
-    padding-bottom: 15px;
-    background: rgba(255,255,255,0.6);
-    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.10);
-    border-radius: 20px;
-    z-index: 10;
-    line-height: 1.4;
-    .process__dot {
-        display: block;
-        position: relative;
-        z-index:0;
-    }
-    height: 180px;
-}
 
+.core-features {
+    img {
+        width: 35px;
+    }
+    .feature {
+       text-align: center;
+        width: 100%;
+        margin: 0 auto;
+        display: table;
+        white-space: nowrap;
+        margin-top:40px;
+    }
+    .feature::before {
+        border-top: 1px solid #1ADEFA;
+        content: '';
+        display: table-cell;
+        position: relative;
+        top: 18px;
+        width: 40%;
+    }
+    .feature::after {
+        border-top: 1px solid #1ADEFA;
+        content: '';
+        display: table-cell;
+        position: relative;
+        top: 18px;
+        width: 40%;
+    }
+    .title {
+        font-size:18px
+    }
+    .content {
+        font-size:15px;
+        color:rgba(30, 55, 90, 0.6);
+        margin-top:5px
+    }
+}
 
 @keyframes b {
     0% {
@@ -523,32 +532,13 @@ export default {
     display:block;
 }
 
-@media only screen and (max-width: 1200px) {
-    .feature-card {
-        margin-left:10px !important
-    }
-}
+
 @media only screen and (max-width: 1024px) {
-    .features-link {
-        display: none;
-    }
-    .process__dot {
-       visibility: hidden !important;
-    }
     .header-bg-step {
         display:none !important
     }
     .timeline__bar {
         height: 897px;
-    }
-    .feature-card {
-        margin-top:10px !important
-    }
-    .extra-content {
-        display:none;
-    }
-    .feature-cards-2 {
-        margin-top:10px !important;
     }
 }
 
@@ -600,6 +590,7 @@ export default {
             padding-left:0px !important;
              padding-right:0px !important;
              padding-top:0px !important;
+
         }
     }
         #boat {
@@ -622,9 +613,7 @@ export default {
      .timeline__bar {
         height: 1116px !important;
     }
-    .features {
-        margin-top: 30px !important
-    }
+
 
     .correlation {
         display:noe !important;
@@ -636,14 +625,13 @@ export default {
         font-size:22px !important;
         margin-top:-5px
     }
-    .process__title {
-        line-height: 1.2;
-    }
-    .process_desc {
-        line-height: 1.2;
-    }
     .roadmap-right {
         padding:0px !important
+    }
+    .header-nav {
+        .download {
+            display:none !important;
+        }
     }
 }
 @media only screen and (max-width: 480px) {
