@@ -191,11 +191,11 @@
                              <a class="title" :href="koalaUrl + '/milestone/4'">v0.4 - Alerting</a>
                              <p class="desc">Build complex alerting logic using multiple trigger conditions, push alerts to multiple providers(sms, email etc).</p>
                          </div>
-                         <div class="timeline-item" style="margin-top:100px;">
+                         <div class="timeline-item" style="margin-top:110px;">
                              <a class="title" :href="koalaUrl + '/milestone/6'" >v0.6 - Metrics Support.</a>
                              <p class="desc">Collect infrastructure and user-define metrics,correlate them with tracing data, output metrics to popular metrics storages</p>
                          </div>
-                          <div class="timeline-item" style="margin-top:100px;">
+                          <div class="timeline-item" style="margin-top:120px;">
                              <a class="title" :href="koalaUrl + '/milestone/8'" style="color:#6B07E5">v1.0 - Production Ready</a>
                              <p class="desc">Test in real production environment for at least 6 weeks, fix all critical bugs.</p>
                          </div>
